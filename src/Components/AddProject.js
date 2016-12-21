@@ -35,19 +35,20 @@ class AddProject extends Component {
     });
     return (
       <div>
-        <h3>Add Project</h3>
+        <h1>QuickTasks</h1>
+        <p>Add things to acomplish, refresh site and forget about it.</p>
         <form onSubmit={this.handleSubmit.bind(this)}>
-          <div>
-            <label>Task Title</label><br />
-            <input type="text" ref="title" />
+          <div className="titleDiv">
+            <label className="titleInput">Task Title</label><br />
+            <input className="title" type="text" ref="title" />
           </div>
-          <div>
-            <label>Category</label><br />
-            <select ref="category">
+          <div className="categoryDiv">
+            <label className="categoryInput">Category</label><br />
+            <select className="category" ref="category">
               {categoryOption}
             </select>
           </div>
-          <input type="submit" value="Add quick task"/>
+          <input type="submit" className="button" value="Add quick task"/>
         </form>
       </div>
     );

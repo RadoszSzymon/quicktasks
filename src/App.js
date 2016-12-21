@@ -26,9 +26,13 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <AddProject addProject={this.handleAddProject.bind(this)}/>
-        <Projects projects={this.state.projects} onDelete={this.handleDeleteProject.bind(this)}/>
+      <div className="App container">
+        <div className="row add">
+          <AddProject addProject={this.handleAddProject.bind(this)}/>
+        </div>
+        <div className="row projects">
+          <Projects projects={this.state.projects} onDelete={this.handleDeleteProject.bind(this)}/>
+        </div>
       </div>
     );
   }
