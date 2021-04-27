@@ -3,6 +3,3 @@ Simple todo app build with React.js to set quick tasks which disappear after ref
 
 ## Technologies used to build this app
 * React.js
-
-## Author
-* Radosz Szymon
